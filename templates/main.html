@@ -7,7 +7,7 @@
   <meta name="og:image" content="static/logo1.png">
   <meta name="Keywords" content="Flask, Machine Learning, Deep Learning, Artificial Intelligence, AI, ML,DL, Web Development">
   <meta name="description" content="A Machine Learning and Deep Learning based webapp for Multiple Disease Prediction.">
-  <title>Multiple Disease Clasification And Prediction System.</title>
+  <title>Disease Prediction System.</title>
   <link rel="icon" href="{{ url_for('static', filename = 'logo1.png') }}" type="image/icon type">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -37,7 +37,7 @@ footer{
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color: black !important;">
-        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename = 'logo.png') }} " height="60px" width="275px"></a>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename = 'logo.png') }} " height="60px" width="60px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
@@ -46,12 +46,7 @@ footer{
              <li class="nav-item active">
                <a href="{{ url_for('home') }}" class="nav-link">Home</a>
              </li>
-             <li class="nav-item active">
-               <a class="nav-link" href="{{ url_for('diabetesPage') }}">Diabetes</a>
-             </li>
-             <li class="nav-item active">
-               <a class="nav-link" href="{{ url_for('cancerPage') }}">Breast Cancer</a>
-             </li>
+             
              <li class="nav-item active">
                 <a class="nav-link" href="{{ url_for('heartPage') }}">Heart</a>
              </li>
@@ -61,12 +56,7 @@ footer{
               <li class="nav-item active">
                 <a class="nav-link" href="{{ url_for('liverPage') }}">Liver</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{ url_for('malariaPage') }}">Malaria</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{ url_for('pneumoniaPage') }}">Pneumonia</a>
-              </li>
+              
            </ul>
          </div>
        </nav>
@@ -83,11 +73,9 @@ footer{
   </main>
   <footer>
     <center>
-      <ul style="list-style-type:none;">
-      &nbsp;
-      <li style="display: inline;"><a href="https://github.com/SAURAVBORAH22/Multiple-Disease-Classification-And-Prediction-System" style="color: black;" target="blank"><span class="fa fa-github">Source Code</span></a></li>
-      <li><p style="color: black;">Made with <span style="color: red;">&hearts;</span> by TEAM TERROR 404 </p></li>
-    </ul>
+      <div class="footer container-fluid pt-4 pb-1 ">
+        <p>Copyright &copy 2022 by <strong>Shruti Singh</strong></p>
+      </div>
   </center>
   </footer>
 </body>

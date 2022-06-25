@@ -5,8 +5,10 @@
         <div class="col-md-6">
             {% if pred == 1 %}
                 <div class="card card-body alert alert-danger"><center>Sorry! Please consult DOCTOR.</center></div>
+                <img class="gif" src="{{ url_for('static', filename='diabetes.jpg') }}" alt="CANCER Image">
             {% else %}
                 <div class="card card-body alert alert-success"><center>Great! You are HEALTHY.</center></div>
+                <img class="gif1" src="{{ url_for('static', filename='negative_result.gif') }}" alt="Not CANCER Image">
             {% endif %}
             <div class="row">
                 <div class="col-md-4"></div>
